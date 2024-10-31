@@ -42,7 +42,7 @@
   <node pkg="subtractor" type="subtractor" name="subtractor_odom">
     <remap from="in1" to="/leadcar/odom" />
 	<remap from="in2" to="/egocar/odom_x" />
-	<remap from="diff" to="/egocar/lead_dist" />
+	<remap from="diff" to="/lead_dist" />
   </node>
 
   

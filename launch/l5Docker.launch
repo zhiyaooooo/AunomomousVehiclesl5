@@ -37,6 +37,7 @@
 	  <node pkg="l5" type="l5" name="l5_node">
 	  	<remap from="/cmd_accel" to="/egocar/cmd_accel"/>
 	  	<remap from="/ego_car/vel_x" to="/egocar/vel_x"/>
+                <remap from="/lead_dist" to="/egocar/lead_dist"/>
 	  </node>
   </group>
 
@@ -51,7 +52,7 @@
   <node pkg="subtractor" type="subtractor" name="subtractor_odom">
     <remap from="in1" to="/leadcar/odom" />
 	<remap from="in2" to="/egocar/odom_x" />
-	<remap from="diff" to="/lead_dist" />
+	<remap from="diff" to="egocar/lead_dist" />
   </node>
 
   

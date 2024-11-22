@@ -4,7 +4,8 @@
   <!-- Controller Launches. profproject control and CBF -->
   <node pkg="l5" type="l5" name="l5_node" output="screen">
 		<remap from="/cmd_accel" to="/cmd_accel_pre"/>
-		<remap from="/egocar/vel_x" to="/car/state/vel_x"/>
+		<remap from="/ego_car/vel_x" to="/car/state/vel_x"/>
+		<remap from="/egocar/rel_vel" to="/rel_vel"/>
 	</node>
 <!-- CBF params -->
   <arg name="description" default="l5_controller2"/>
